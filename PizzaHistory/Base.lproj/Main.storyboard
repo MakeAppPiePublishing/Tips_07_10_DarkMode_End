@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NFm-bs-He6">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Awv-Hv-iM3">
+            <objects>
+                <viewController id="7a2-ap-c4i" customClass="ViewController" customModule="PizzaHistory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qt0-FV-4rX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JsZ-Xk-txC">
+                                <rect key="frame" x="20" y="686" width="374" height="156"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-Qs-Cbe" userLabel="Naples">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                                        <color key="backgroundColor" name="Blue 44% #10106F"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="Naples">
+                                            <color key="titleColor" name="Blue 98% Pale #D2D2F8"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="7a2-ap-c4i" eventType="touchUpInside" id="aHw-91-HvA"/>
+                                            <segue destination="PWz-17-Kfg" kind="show" id="br4-ct-ksT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVn-kP-poP">
+                                        <rect key="frame" x="0.0" y="40" width="374" height="36"/>
+                                        <color key="backgroundColor" name="Blue 44% #10106F"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="New York">
+                                            <color key="titleColor" name="Blue 98% Pale #D2D2F8"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="7a2-ap-c4i" eventType="touchUpInside" id="aCH-qD-EG0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-pq-iVY">
+                                        <rect key="frame" x="0.0" y="80" width="374" height="36"/>
+                                        <color key="backgroundColor" name="Blue 44% #10106F"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="Chicago">
+                                            <color key="titleColor" name="Blue 98% Pale #D2D2F8"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="7a2-ap-c4i" eventType="touchUpInside" id="3mV-Bv-wpy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgy-7m-NhW">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="36"/>
+                                        <color key="backgroundColor" name="Blue 44% #10106F"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <state key="normal" title="California">
+                                            <color key="titleColor" name="Blue 98% Pale #D2D2F8"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button:" destination="7a2-ap-c4i" eventType="touchUpInside" id="HQu-6a-zma"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Tap a button below to find out about a pizza. " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pif-hd-ZGE">
+                                <rect key="frame" x="20" y="559" width="374" height="77"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" xcode11CocoaTouchSystemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjo-aY-dPY">
+                                <rect key="frame" x="20" y="108" width="374" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PizzaDefault" translatesAutoresizingMaskIntoConstraints="NO" id="ERF-Kj-RtB">
+                                <rect key="frame" x="20" y="164" width="374" height="375"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ERF-Kj-RtB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eKT-Om-c2k" secondAttribute="leading" constant="20" id="1UO-GW-N5D"/>
+                            <constraint firstItem="Pif-hd-ZGE" firstAttribute="top" secondItem="ERF-Kj-RtB" secondAttribute="bottom" constant="20" id="2Jz-d4-Vv9"/>
+                            <constraint firstItem="eKT-Om-c2k" firstAttribute="trailing" secondItem="vjo-aY-dPY" secondAttribute="trailing" constant="20" id="4AO-Y3-vhs"/>
+                            <constraint firstItem="eKT-Om-c2k" firstAttribute="trailing" secondItem="Pif-hd-ZGE" secondAttribute="trailing" constant="20" id="5lB-xf-UXH"/>
+                            <constraint firstItem="eKT-Om-c2k" firstAttribute="bottom" secondItem="JsZ-Xk-txC" secondAttribute="bottom" constant="20" id="7LO-kd-vJe"/>
+                            <constraint firstItem="vjo-aY-dPY" firstAttribute="leading" secondItem="eKT-Om-c2k" secondAttribute="leading" constant="20" id="D1Q-NE-YEL"/>
+                            <constraint firstItem="eKT-Om-c2k" firstAttribute="trailing" secondItem="JsZ-Xk-txC" secondAttribute="trailing" constant="20" id="ETP-uF-fbo"/>
+                            <constraint firstItem="ERF-Kj-RtB" firstAttribute="top" secondItem="vjo-aY-dPY" secondAttribute="bottom" constant="20" id="ICh-7g-X4r"/>
+                            <constraint firstItem="Pif-hd-ZGE" firstAttribute="leading" secondItem="eKT-Om-c2k" secondAttribute="leading" constant="20" id="Qpe-OT-5NB"/>
+                            <constraint firstItem="vjo-aY-dPY" firstAttribute="top" secondItem="eKT-Om-c2k" secondAttribute="top" constant="20" id="kKb-fG-Wuf"/>
+                            <constraint firstItem="JsZ-Xk-txC" firstAttribute="leading" secondItem="eKT-Om-c2k" secondAttribute="leading" constant="20" id="po8-AH-aRB"/>
+                            <constraint firstItem="JsZ-Xk-txC" firstAttribute="top" secondItem="Pif-hd-ZGE" secondAttribute="bottom" constant="50" id="smZ-BQ-hMn"/>
+                            <constraint firstItem="eKT-Om-c2k" firstAttribute="trailing" secondItem="ERF-Kj-RtB" secondAttribute="trailing" constant="20" id="zYB-vi-EyZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eKT-Om-c2k"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bdZ-bt-YEQ"/>
+                    <connections>
+                        <outlet property="imageView" destination="ERF-Kj-RtB" id="Qkr-ru-t37"/>
+                        <outlet property="textView" destination="Pif-hd-ZGE" id="3jI-wR-PU7"/>
+                        <outlet property="titleLabel" destination="vjo-aY-dPY" id="wcP-Yf-jz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFe-Tu-5am" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915.94202898550736" y="-92.410714285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1zE-Af-y5s">
+            <objects>
+                <viewController id="PWz-17-Kfg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iV9-cP-hbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Naples" translatesAutoresizingMaskIntoConstraints="NO" id="yJo-bg-ZfX">
+                                <rect key="frame" x="10" y="319" width="394" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyW-Y5-F6N">
+                                <rect key="frame" x="31" y="802" width="352" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3XD-Rz-UXt">
+                                <rect key="frame" x="123" y="704" width="168.5" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hZ7-3p-92U"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="textformat" catalog="system"/>
+                                    <segment title="" image="pencil" catalog="system"/>
+                                    <segment title="" image="paperplane.fill" catalog="system"/>
+                                    <segment title="" image="trash.fill" catalog="system"/>
+                                </segments>
+                                <color key="tintColor" name="Blue 44% #10106F"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUc-fu-ssT">
+                                <rect key="frame" x="255" y="88" width="149" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" cocoaTouchSystemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cyW-Y5-F6N" firstAttribute="top" secondItem="3XD-Rz-UXt" secondAttribute="bottom" constant="48" id="21s-Yu-TWi"/>
+                            <constraint firstItem="3XD-Rz-UXt" firstAttribute="centerX" secondItem="sQG-XZ-d8V" secondAttribute="centerX" id="3Sk-oe-FOG"/>
+                            <constraint firstItem="sQG-XZ-d8V" firstAttribute="bottom" secondItem="cyW-Y5-F6N" secondAttribute="bottom" constant="30" id="FA4-eE-3zK"/>
+                            <constraint firstItem="cyW-Y5-F6N" firstAttribute="centerX" secondItem="sQG-XZ-d8V" secondAttribute="centerX" id="Jnf-Rm-9qb"/>
+                            <constraint firstItem="cyW-Y5-F6N" firstAttribute="width" secondItem="sQG-XZ-d8V" secondAttribute="width" multiplier="0.85" id="Lea-Pt-C8G"/>
+                            <constraint firstItem="lUc-fu-ssT" firstAttribute="leading" secondItem="sQG-XZ-d8V" secondAttribute="leading" constant="255" id="QTS-xS-yXa"/>
+                            <constraint firstAttribute="trailing" secondItem="yJo-bg-ZfX" secondAttribute="trailing" constant="10" id="QvW-tm-0yv"/>
+                            <constraint firstItem="yJo-bg-ZfX" firstAttribute="leading" secondItem="iV9-cP-hbQ" secondAttribute="leading" constant="10" id="Ukb-uh-wUT"/>
+                            <constraint firstItem="lUc-fu-ssT" firstAttribute="top" secondItem="sQG-XZ-d8V" secondAttribute="top" id="XIq-tX-E9F"/>
+                            <constraint firstItem="sQG-XZ-d8V" firstAttribute="trailing" secondItem="lUc-fu-ssT" secondAttribute="trailing" constant="10" id="cfb-UL-pij"/>
+                            <constraint firstItem="3XD-Rz-UXt" firstAttribute="top" secondItem="yJo-bg-ZfX" secondAttribute="bottom" constant="10" id="sWD-sA-uOA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sQG-XZ-d8V"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cv-tN-NIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1715.9420289855075" y="-92.410714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="geQ-NK-CIO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NFm-bs-He6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w1r-HL-ZD7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7a2-ap-c4i" kind="relationship" relationship="rootViewController" id="0Rs-Bb-7QT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFv-fL-PBX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.7971014492753632" y="-92.410714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Naples" width="500" height="375"/>
+        <image name="PizzaDefault" width="500" height="375"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+        <image name="pencil" catalog="system" width="64" height="58"/>
+        <image name="textformat" catalog="system" width="64" height="40"/>
+        <image name="trash.fill" catalog="system" width="58" height="64"/>
+        <namedColor name="Blue 44% #10106F">
+            <color red="0.062745098039215685" green="0.062745098039215685" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blue 98% Pale #D2D2F8">
+            <color red="0.82352941176470584" green="0.82352941176470584" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
